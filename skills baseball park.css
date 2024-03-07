@@ -15,7 +15,6 @@ a {
 
 #wrap {
   width: 100%;
-  height: 1380px;
   background-color: #f5f5f5;
   display: flex;
   justify-content: center;
@@ -23,7 +22,7 @@ a {
 
 .back {
   width: 1920px;
-  height: 1380px;
+  /* height: 100vh; */
   /* background-color: #afafaf; */
 }
 
@@ -44,6 +43,7 @@ a {
   font-size: 30px;
   font-weight: 1000;
   color: aliceblue;
+  cursor: default;
 }
 
 .nav {
@@ -66,10 +66,10 @@ a {
   text-align: center;
   line-height: 40px;
   font-size: 23px;
-  cursor: pointer;
 }
 
 .nav > ul > li > a {
+  cursor: pointer;
   position: relative;
   color: #d3d3d3;
 }
@@ -139,7 +139,7 @@ a {
   width: 500%;
   height: 1160px;
   display: flex;
-  animation: slide infinite linear 13s;
+  animation: slide infinite linear 16s;
 }
 
 .slide > div {
@@ -150,7 +150,7 @@ a {
 
 .slide > div::before {
   content: "";
-  opacity: 0.3;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
@@ -163,14 +163,16 @@ a {
   position: absolute;
   top: 450px;
   left: 60px;
+  height: 0;
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   opacity: 0.7;
+  cursor: default;
 }
 
 .txt1:hover {
   opacity: 1;
-  color: aliceblue;
+  color: rgb(245, 119, 41);
   transition: 0.3s;
 }
 
@@ -182,6 +184,7 @@ a {
 }
 
 .txt1 > h2 {
+  width: 500px;
   text-align: left;
   line-height: 110px;
   font-size: 60px;
@@ -196,7 +199,8 @@ a {
   color: aliceblue;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   opacity: 0.8;
-  z-index: 3;
+  z-index: 1;
+  cursor: default;
 }
 
 .txt2:hover {
@@ -215,16 +219,51 @@ a {
   position: absolute;
   top: 450px;
   left: 0;
-  width: 1400px;
+  width: 1920px;
   color: aliceblue;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: default;
 }
 
 .txt3 > h1 {
-  text-align: center;
+  padding-left: 20px;
+  text-align: left;
   line-height: 110px;
   font-size: 50px;
+  opacity: 0.5;
+  /* border: none; */
   /* background-color: gray; */
+}
+
+.txt3 > h1:hover {
+  opacity: 1;
+  background-color: rgba(243, 115, 33, 0.5);
+  transition: 1s;
+}
+
+.txt4 {
+  position: absolute;
+  top: 450px;
+  left: 260px;
+  width: 1400px;
+  height: 110px;
+  color: aliceblue;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  /* background-color: gray; */
+}
+
+.txt4 > h1 {
+  text-align: center;
+  line-height: 110px;
+  font-size: 45px;
+}
+
+.txt4 > h3 {
+  padding-right: 60px;
+  text-align: right;
+  line-height: 110px;
+  font-size: 45px;
 }
 
 @keyframes slide {
@@ -261,23 +300,55 @@ a {
   width: 100%;
 }
 
+.contents {
+  width: 100%;
+  height: 600px;
+  background-color: lightcoral;
+}
+
 .footer {
   width: 100%;
+  height: 300px;
+  background-color: black;
   display: flex;
 }
 
-.footer1 {
-  width: 20%;
-  height: 100px;
-  background-color: lightblue;
+.copyright {
+  width: 700px;
+  /* background-color: #afafaf; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer2 {
-  width: 60%;
-  height: 100px;
-  background-color: lightcoral;
+
+.copyright > p {
+  color: #d3d3d3;
+  margin-left: 10px;
+  line-height: 50px;
+  letter-spacing: 0;
+  font-size: 25px;
+  cursor: default;
 }
-.footer3 {
-  width: 20%;
-  height: 100px;
-  background-color: lightgreen;
+
+.footcontainer {
+  width: 1220px;
+  height: 300px;
+  /* background-color: green; */
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+
+.footbox {
+  width: 330px;
+  height: 70px;
+  /* background-color: lightblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footbox > h1 {
+  color: aliceblue;
+  cursor: default;
 }
