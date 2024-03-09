@@ -1,0 +1,113 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    height: 1200px;
+    background-color: rgb(29, 29, 29);
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid gray;
+    font-size: 19px;
+    padding: 3px;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+    color: white;
+    background-color: rgb(29, 29, 29);
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.back {
+    display: block;
+    position: absolute;
+}
+
+.button {
+    cursor: pointer;
+    padding-right: 172px;
+    padding-bottom: 166px;
+    /* background-color: aqua; */
+}
+
+.box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    visibility: collapse;
+    transform: scale(0);
+}
+
+.modalb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    width: 500px;
+    height: 300px;
+    background-color: black;
+    border: 1px solid white;
+    /* box-shadow: 0 0 3px rgba(255, 255, 255, 0.7); */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.closer {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    background-color: rgb(29, 29, 29);
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    border-bottom-left-radius: 9px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.text {
+    display: inline-block;
+    width: 100%;
+}
+
+.text h3 {
+    text-align: center;
+    line-height: 300px;
+    font-size: 25px;
+}
+
+input#modal[type=checkbox]:checked ~ .box {
+    visibility: visible;
+    transform: scale(1);
+}
+
+th {
+    background-color: rgb(29, 29, 29);
+    border: 2px solid gray;
+    font-weight: bold;
+    height: 40px;
+}
