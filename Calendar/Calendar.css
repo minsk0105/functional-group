@@ -6,12 +6,38 @@
 
 .wrap {
     width: 100%;
-    height: 1200px;
+    height: 1300px;
     background-color: rgb(29, 29, 29);
+}
+
+.daily {
+    display: inline-block;
+    width: 100%;
+    line-height: 200px;
+    /* background-color: #afafaf; */
 }
 
 h1 {
     text-align: center;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+p {
+    width: 800px;
+    text-align: center;
+    border-radius: 20px;
+    line-height: 70px;
+    font-size: 40px;
+    background-color: rgba(243, 115, 33, 0.5);
+}
+
+.cale {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 table {
@@ -20,7 +46,7 @@ table {
 
 td {
     border: 2px solid gray;
-    font-size: 19px;
+    font-size: 30px;
     padding: 3px;
     width: 200px;
     height: 200px;
@@ -41,8 +67,8 @@ td {
 
 .button {
     cursor: pointer;
-    padding-right: 172px;
-    padding-bottom: 166px;
+    padding-right: 160px;
+    padding-bottom: 153px;
     /* background-color: aqua; */
 }
 
@@ -52,9 +78,10 @@ td {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     visibility: collapse;
+    transition: all 0.3s ease;
     transform: scale(0);
 }
 
@@ -66,11 +93,11 @@ td {
     margin-left: -250px;
     width: 500px;
     height: 300px;
-    background-color: black;
-    border: 1px solid white;
+    background-color: rgb(251, 253, 255);
     /* box-shadow: 0 0 3px rgba(255, 255, 255, 0.7); */
-    border-radius: 20px;
+    border-radius: 9px;
     overflow: hidden;
+    color: black;
 }
 
 .closer {
@@ -79,9 +106,9 @@ td {
     height: 30px;
     top: 0;
     right: 0;
-    background-color: rgb(29, 29, 29);
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
+    background-color: #575757;
+    color: white;
+    border: none;
     border-bottom-left-radius: 9px;
     text-align: center;
     line-height: 26px;
@@ -108,6 +135,7 @@ input#modal[type=checkbox]:checked ~ .box {
 th {
     background-color: rgb(29, 29, 29);
     border: 2px solid gray;
+    font-size: 30px;
     font-weight: bold;
-    height: 40px;
+    height: 50px;
 }
