@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>랭킹</title>
+    <title>랭킹창</title>
     <link rel="stylesheet" href="rk.css">
 </head>
 <body>
     <div class="wrap">
+
         <div class="rb">
+
             <div class="head">
+                
                 <div class="head1">
-                    <label for="modal" class="btn">
+                    <label for="night" class="btn">
                         나이트리그
                     </label>
                 </div>
@@ -21,44 +24,80 @@
                         주말리그
                     </label>
                 </div>
-                
+
                 <div class="head3">
-                    <label for="am" class="btn">
+                    <label for="dawn" class="btn">
                         새벽리그
                     </label>
                 </div>
 
             </div>
 
-            
-            <div class="bb">
+            <div class="select">
 
-                <input type="checkbox" id="modal" class="hidden">
-                <div class="sb">
-                    <div class="sb1">
-                        <div class="sb11">
-                            <label for="acc" class="btn2">투수</label>
-                        </div>
+                <input type="checkbox" id="night" class="hidden">
+                <div class="select1">
 
-                        <input type="checkbox" id="acc" class="hidden">
-                        <div class="cont"></div>
-                    </div>
-                    
-                    <div class="sb2">
-                        <div class="sb22">
-                            <label for="akk" class="btn2">타자</label>
-                        </div>
-
-                        <input type="checkbox" id="akk" class="hidden">
-                        <div class="cont2"></div>
-                    </div>
+                    <label for="pitch" class="sbn">투수</label>
+                    <label for="hitter" class="sbn">타자</label>
 
                 </div>
-                
+
+                <input type="checkbox" id="week" class="hidden">
+                <div class="select2">
+
+                    <label for="pitch2" class="sbn">투수</label>
+                    <label for="hitter2" class="sbn">타자</label>
+
+                </div>
+
+                <input type="checkbox" id="dawn" class="hidden">
+                <div class="select3">
+                    
+                    <label for="pitch3" class="sbn">투수</label>
+                    <label for="hitter3" class="sbn">타자</label>
+
+                </div>
+
+            </div>
+
+            <div class="content">
+
+                <div class="content1">
+
+                    <input type="checkbox" id="pitch" class="hidden">
+                    <div class="content1-1"></div>
+
+                    <input type="checkbox" id="hitter" class="hidden">
+                    <div class="content1-2"></div>
+
+                </div>
+
+                <div class="content2">
+
+                    <input type="checkbox" id="pitch2" class="hidden">
+                    <div class="content2-1"></div>
+
+                    <input type="checkbox" id="hitter2" class="hidden">
+                    <div class="content2-2"></div>
+
+                </div>
+
+                <div class="content3">
+
+                    <input type="checkbox" id="pitch3" class="hidden">
+                    <div class="content3-1"></div>
+
+                    <input type="checkbox" id="hitter3" class="hidden">
+                    <div class="content3-2"></div>
+
+                </div>
+
             </div>
 
         </div>
         
     </div>
+
 </body>
 </html>
