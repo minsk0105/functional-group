@@ -58,19 +58,53 @@
     display: none;
 }
 
+.sbn {
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 .select1 {
     width: 400px;
+    display: flex;
+}
+
+.select1-1 {
+    width: 200px;
     background-color: gray;
+}
+.select1-2 {
+    width: 200px;
+    background-color: palegoldenrod;
 }
 
 .select2 {
     width: 400px;
+    display: flex;
+}
+
+.select2-1 {
+    width: 200px;
     background-color: rgb(179, 54, 54);
+}
+.select2-2 {
+    width: 200px;
+    background-color: palevioletred;
 }
 
 .select3 {
     width: 400px;
+    display: flex;
+}
+
+.select3-1 {
+    width: 200px;
     background-color: rgb(144, 81, 202);
+}
+
+.select3-2 {
+    width: 200px;
+    background-color: darkcyan;
 }
 
 .content {
