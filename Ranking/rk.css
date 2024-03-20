@@ -5,7 +5,7 @@
     font-family: Century Gothic, sans-serif;
 }
 
-.wrap {
+.ranb {
     width: 100%;
     height: 800px;
     display: flex;
@@ -14,7 +14,7 @@
     background-color: rgb(40, 40, 40);
 }
 
-.main {
+.ranm {
     width: 1200px;
     height: 600px;
     display: flex;
@@ -26,7 +26,7 @@
     background-color: aliceblue;
 }
 
-.head {
+.ranh {
     width: 600px;
     text-align: center;
     line-height: 70px;
@@ -35,15 +35,15 @@
     color: white;
 }
 
-.head1 {
+.ranh1 {
     width: 200px;
 }
 
-.head2 {
+.ranh2 {
     width: 200px;
 }
 
-.head3 {
+.ranh3 {
     width: 200px;
 }
 
