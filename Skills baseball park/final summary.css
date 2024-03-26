@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Century Gothic, sans-serif;
-    color: white;
+    color: inherit;
+    cursor: default;
 }
 
 li {
@@ -32,13 +33,13 @@ a {
     text-align: center;
     line-height: 70px;
     background-color: rgb(42, 152, 185);
+    color: white;
     display: flex;
 }
 
 .logo {
     width: 320px;
     font-size: 25px;
-    cursor: default;
 }
 
 .nav {
@@ -90,8 +91,137 @@ a {
     padding-left: 10px;
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .login a:hover {
     color: #3a3a3a;
+}
+
+.imgslide {
+    width: 1320px;
+    height: 600px;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+.slide {
+    position: relative;
+    width: 6600px;
+    display: flex;
+    color: white;
+    animation: slide infinite linear 10s;
+}
+
+.slide > div {
+    position: relative;
+    width: 1320px;
+    height: 530px;
+}
+
+.slide > div::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.slide > div > img {
+    width: 1320px;
+    height: 530px;
+}
+
+.t1 {
+    position: absolute;
+    top: 225px;
+    left: 60px;
+    width: 370px;
+    font-size: 19px;
+    opacity: 0.6;
+}
+
+.t1:hover {
+    opacity: 1;
+    color: rgb(243, 115, 33);
+    transition: all 0.4s;
+}
+
+.t2 {
+    position: absolute;
+    width: 390px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -195px;
+    text-align: center;
+    font-size: 19px;
+}
+
+.t2:hover {
+    transform: scale(1.4);
+    transition: all 0.4s;
+}
+
+.t3 {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    font-size: 30px;
+    width: 500px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+}
+
+.t3:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transition: 1.5s ease;
+}
+
+.t4 {
+    position: absolute;
+    width: 540px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -270px;
+    text-align: center;
+    font-size: 19px;
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
 }
