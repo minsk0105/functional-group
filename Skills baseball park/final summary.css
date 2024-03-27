@@ -35,7 +35,7 @@ a {
     background-color: rgb(42, 152, 185);
     color: white;
     display: flex;
-    z-index: 1;
+    z-index: 2;
 }
 
 .logo {
@@ -340,4 +340,54 @@ a {
 .inbtn button:hover::after {
     left: 0;
     width: 100%;
+}
+
+.calendar {
+    width: 1320px;
+    height: 800px;
+    background-color: rgb(40, 40, 40);
+    border-top: 1px solid gray;
+    color: white;
+}
+
+.daily {
+    width: 100%;
+}
+
+.year {
+    text-align: center;
+    line-height: 70px;
+}
+
+.status {
+    width: 300px;
+    margin-left: 510px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(243, 115, 33);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.sld {
+    position: relative;
+    width: 1200px;
+    display: flex;
+    animation: sld infinite linear 6s;
+}
+
+.sld > div {
+    width: 300px;
+    text-align: center;
+    line-height: 35px;
+}
+
+@keyframes sld {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100%;
+    }
 }
