@@ -244,7 +244,6 @@ a {
 
 .cont1 {
     overflow: hidden;
-    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -370,6 +369,10 @@ a {
     justify-content: center;
 }
 
+.status:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
 .sld {
     position: relative;
     width: 1200px;
@@ -390,4 +393,100 @@ a {
     100% {
         left: -100%;
     }
+}
+
+.cale {
+    width: 1320px;
+    height: 595px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    color: white;
+}
+
+th {
+    border: 2px solid white;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+}
+
+td {
+    border: 2px solid white;
+    font-size: 25px;
+    padding: 3px;
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.mbtn {
+    cursor: pointer;
+    padding-right: 70px;
+    padding-bottom: 62px;
+}
+
+.molab {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    overflow: hidden;
+    visibility: collapse;
+    transform: scale(0);
+    transition: all 0.2s ease-out;
+}
+
+.mob {
+    position: absolute;
+    width: 300px;
+    height: 140px;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -70px;
+    background-color: white;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.closer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    border: none;
+    border-bottom-left-radius: 5px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.mt {
+    display: inline-block;
+    width: 100%;
+    color: black;
+    text-align: center;
+    line-height: 140px;
+    font-size: 17px;
+}
+
+input#modal:checked ~ .molab {
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.1s ease-out;
 }
