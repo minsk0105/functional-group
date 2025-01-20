@@ -5,6 +5,11 @@
   cursor: default;
 }
 
+span {
+  display: block;
+  padding-top: 10px;
+}
+
 .back {
   width: 100%;
   display: flex;
